@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+  position: sticky;
+}
+/* Style the topnav links */
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    float: left;
+  border-right: 1px solid #bbb;
+}
+/* Change color on hover */
+.topnav a:hover {
+   background-color: #808080;
+}
+.topnav:last-child {
+  border-right: none;
+  border-left: 1px solid #bbb;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: #ddd;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+img {
+    max-width:30%;
+    height: auto;
+}
